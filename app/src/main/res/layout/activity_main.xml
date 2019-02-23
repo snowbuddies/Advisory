@@ -34,7 +34,7 @@
                     android:hint="Starting Location" android:id="@+id/st"
                     android:textColor="@android:color/white" android:textStyle="bold"
                     android:background="@color/trafficSign"
-                    android:fontFamily="sans-serif"/>
+                    android:fontFamily="@font/advent_pro_semibold"/>
             <Space
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content" android:layout_weight="5"/>
@@ -49,7 +49,7 @@
                     android:layout_height="wrap_content"
                     android:hint="Destination" android:id="@+id/ed" android:textColor="@android:color/white"
                     android:textStyle="bold" android:background="@color/trafficSign"
-            />
+                    android:fontFamily="@font/advent_pro_semibold"/>
         </android.support.design.widget.TextInputLayout>
     </LinearLayout>
 

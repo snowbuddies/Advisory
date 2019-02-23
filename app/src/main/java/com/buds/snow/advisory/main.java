@@ -6,6 +6,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
 import android.support.annotation.NonNull;
+import android.view.KeyEvent;
+import android.view.View;
 import com.mapbox.mapboxsdk.Mapbox;
 import com.mapbox.mapboxsdk.maps.MapView;
 import com.mapbox.mapboxsdk.maps.MapboxMap;
@@ -17,6 +19,8 @@ public class main extends AppCompatActivity {
 
     private MapView mapView;
 
+
+    private TextInputEditText.OnKeyListener startLocListener;
     private TextInputEditText st;
     private TextInputEditText ed;
     private String sLoc;
@@ -52,9 +56,16 @@ public class main extends AppCompatActivity {
     private void InitializeApp() {
         st = (TextInputEditText) findViewById(R.id.st);
         ed = (TextInputEditText) findViewById(R.id.ed);
+
+
+        //Get this to work!!!:
+//        startLocListener = new TextInputEditText.OnKeyListener() {
+//            public void onKey(View v, int i, KeyEvent k){
+//
+//            }
+//        }
+
     }
-
-
 
 
 

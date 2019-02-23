@@ -18,14 +18,12 @@
             mapbox:mapbox_cameraZoom="11" />
 
 
-
-
     <LinearLayout
             android:orientation="vertical"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="32dp"
-            app:layout_constraintTop_toTopOf="parent" android:layout_marginTop="24dp">
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="24dp"
+            app:layout_constraintTop_toTopOf="parent" android:layout_marginTop="16dp">
         <android.support.design.widget.TextInputLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
@@ -33,7 +31,10 @@
             <android.support.design.widget.TextInputEditText
                     android:layout_width="200dp"
                     android:layout_height="wrap_content"
-                    android:hint="Starting Location" android:id="@+id/st"/>
+                    android:hint="Starting Location" android:id="@+id/st"
+                    android:textColor="@android:color/white" android:textStyle="bold"
+                    android:background="@color/trafficSign"
+                    android:fontFamily="sans-serif"/>
             <Space
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content" android:layout_weight="5"/>
@@ -46,7 +47,9 @@
             <android.support.design.widget.TextInputEditText
                     android:layout_width="200dp"
                     android:layout_height="wrap_content"
-                    android:hint="Destination" android:id="@+id/ed"/>
+                    android:hint="Destination" android:id="@+id/ed" android:textColor="@android:color/white"
+                    android:textStyle="bold" android:background="@color/trafficSign"
+            />
         </android.support.design.widget.TextInputLayout>
     </LinearLayout>
 
